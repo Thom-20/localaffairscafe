@@ -798,6 +798,7 @@ body.menu-open{
     height:auto;
     display:block;
     align-items: center;
+    margin-left: 20px; !important;
 }
 
 
