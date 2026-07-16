@@ -833,6 +833,7 @@ body.menu-open{
     display:flex;
     align-items:center;
     justify-content:center;
+    transform:translateX(-12px);
   }
 
   .brand img{
