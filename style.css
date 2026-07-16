@@ -793,13 +793,17 @@ body.menu-open{
     height:26px;
 }
 
-.brand img{
-    width:300px;
-    height:auto;
-    display:block;
-    align-items: center;
-    margin-left: 20px; !important;
-}
+.brand{
+        position:absolute;
+        left:50%;
+        transform:translateX(-35%);
+    }
+
+    .brand img{
+        width:300px;
+        height:auto;
+        display:block;
+    }
 
 
 .menu-leaf{
