@@ -3,190 +3,243 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>The Local Affair</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
 <header class="top-header">
   <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
-    <span></span><span></span><span></span>
+    <span></span>
+    <span></span>
+    <span></span>
   </button>
 
- <a href="#home" class="brand">
+  <a href="#home" class="brand">
     <img src="title.png" alt="The Local Affair">
-</a>
+  </a>
 </header>
 
 <div class="mobile-overlay" id="mobileOverlay"></div>
 
 <main class="layout" id="home">
+
   <aside class="side-menu" id="sideMenu">
     <button class="close-menu" id="closeMenu" aria-label="Close menu">×</button>
 
     <div class="side-logo">
-      <img src="logo1.png" alt="The Upstate Affair Logo">
+      <img src="logo1.png" alt="The Local Affair Logo">
     </div>
 
     <nav class="side-nav">
       <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
-      <a href="#menu">Menu</a>
+
+      <a href="#" id="openMenuFromSidebar">Menu</a>
+
       <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
     </nav>
-    
 
-   <div class="side-footer">
-
-    <img src="leaf.png" alt="Decorative Leaf" class="menu-leaf">
-
-</div>
+    <div class="side-footer">
+      <img src="leaf.png" alt="Decorative Leaf" class="menu-leaf">
+    </div>
   </aside>
 
   <section class="hero">
     <div class="hero-content">
-      <h2>Locally Inspired.<br>Thoughtfully Crafted.</h2>
-      <div class="divider"><span></span><b>❧</b><span></span></div>
-      <p>Good food. Great company. Upstate spirit.</p>
-      <div class="hero-buttons">
-        <button class="btn gold" id="openFullscreenMenu">View Menu</button>
+      <h2>
+        Locally Inspired.<br>
+        Thoughtfully Crafted.
+      </h2>
+
+      <div class="divider">
+        <span></span>
+        <b>❧</b>
+        <span></span>
       </div>
+
+      <p>Good food. Great company. Upstate spirit.</p>
     </div>
   </section>
+
 </main>
 
 <section id="about" class="features-bar">
+
   <article class="feature">
     <div class="feature-icon">
-    <img src="icon1.png" alt="Local Ingredients">
-</div>
+      <img src="icon1.png" alt="Local Ingredients">
+    </div>
+
     <div>
       <h3>Local Ingredients</h3>
-      <p>We partner with local farmers and producers to bring you the freshest seasonal flavors.</p>
+      <p>
+        We partner with local farmers and producers to bring you
+        the freshest seasonal flavors.
+      </p>
     </div>
   </article>
 
   <article class="feature">
-     <div class="feature-icon">
-    <img src="icon2.png" alt="Local Ingredients">
-</div>
+    <div class="feature-icon">
+      <img src="icon2.png" alt="Seasonal Menus">
+    </div>
+
     <div>
       <h3>Seasonal Menus</h3>
-      <p>Our menu changes with the seasons, featuring the best of what’s locally available.</p>
+      <p>
+        Our menu changes with the seasons, featuring the best
+        of what’s locally available.
+      </p>
     </div>
   </article>
 
   <article class="feature">
-     <div class="feature-icon">
-    <img src="icon3.png" alt="Local Ingredients">
-</div>
+    <div class="feature-icon">
+      <img src="icon3.png" alt="Warm Hospitality">
+    </div>
+
     <div>
       <h3>Warm Hospitality</h3>
-      <p>We believe in genuine hospitality and creating memorable experiences.</p>
+      <p>
+        We believe in genuine hospitality and creating
+        memorable experiences.
+      </p>
     </div>
   </article>
+
 </section>
 
 <section id="contact" class="bottom-info">
+
   <div class="bottom-brand">
-    <img src="logo.png" alt="The Upstate Affair Logo">
+    <img src="logo.png" alt="The Local Affair Logo">
   </div>
 
   <div class="bottom-detail">
     <h4>Hours</h4>
-    <p>Open Daily<br>11:30 AM – 9:00 PM</p>
+
+    <p>
+      Open Daily<br>
+      11:30 AM – 9:00 PM
+    </p>
   </div>
 
- <div class="bottom-detail">
+  <div class="bottom-detail">
     <h4>Address</h4>
 
-    <a href="https://maps.google.com/?q=7629A+NY-80+Cooperstown+NY"
-       class="contact-link"
-       target="_blank">
+    <a
+      href="https://maps.google.com/?q=7629A+NY-80+Cooperstown+NY"
+      class="contact-link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="location.png" alt="Location">
 
-        <img src="location.png" alt="Location">
-
-        <span>
-            7629A NY-80<br>
-            Cooperstown NY
-        </span>
-
+      <span>
+        7629A NY-80<br>
+        Cooperstown NY
+      </span>
     </a>
-</div>
+  </div>
 
   <div class="bottom-detail">
     <h4>Contact</h4>
 
     <a href="tel:+13158586022" class="contact-link">
-
-        <img src="phone.png" alt="Phone">
-
-        <span>(315) 858-6022</span>
-
+      <img src="phone.png" alt="Phone">
+      <span>(315) 858-6022</span>
     </a>
 
-    <a href="mailto:info@thelocalaffair.com"
-       class="contact-link">
-
-        <img src="mail.png" alt="Email">
-
-        <span>info@thelocalaffair.com</span>
-
+    <a
+      href="mailto:info@thelocalaffair.com"
+      class="contact-link"
+    >
+      <img src="mail.png" alt="Email">
+      <span>info@thelocalaffair.com</span>
     </a>
 
-    <a href=""
-       class="instagram-link"
-       target="_blank">
-
-        <img src="insta.png" alt="Instagram">
-
-        @thelocalaffair
-
+    <a
+      href="https://instagram.com/thelocalaffair"
+      class="instagram-link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="insta.png" alt="Instagram">
+      <span>@thelocalaffair</span>
     </a>
+  </div>
 
-</div>
 </section>
 
 <footer class="site-footer">
-    <p>© 2026 The Local Affair.<br> All Rights Reserved.</p>
-    <p>Designed by Andrei Toma</p>
+  <p>
+    © 2026 The Local Affair.<br>
+    All Rights Reserved.
+  </p>
+
+  <p>Designed by Andrei Toma</p>
 </footer>
 
-
-
 <div class="fullscreen-menu" id="fullscreenMenu">
-  <button class="fullscreen-close" id="closeFullscreenMenu">×</button>
+  <button
+    class="fullscreen-close"
+    id="closeFullscreenMenu"
+    aria-label="Close menu"
+  >
+    ×
+  </button>
 
   <div class="fullscreen-menu-content">
     <h2>Our Menu</h2>
-    <p class="menu-subtitle">Fresh, seasonal, locally inspired.</p>
+
+    <p class="menu-subtitle">
+      Fresh, seasonal, locally inspired.
+    </p>
 
     <div class="menu-category">
       <h3>Starters</h3>
-      <p>Seasonal soups, salads, wings, and shareable bites.</p>
+      <p>
+        Seasonal soups, salads, wings, and shareable bites.
+      </p>
     </div>
 
     <div class="menu-category">
       <h3>Main Dishes</h3>
-      <p>Burgers, steaks, pasta, seafood, and house favorites.</p>
+      <p>
+        Burgers, steaks, pasta, seafood, and house favorites.
+      </p>
     </div>
 
     <div class="menu-category">
       <h3>Desserts</h3>
-      <p>Cakes, pies, ice cream, and sweet classics.</p>
+      <p>
+        Cakes, pies, ice cream, and sweet classics.
+      </p>
     </div>
 
     <div class="menu-category">
       <h3>Drinks</h3>
-      <p>Coffee, cocktails, wine, beer, and soft drinks.</p>
+      <p>
+        Coffee, cocktails, wine, beer, and soft drinks.
+      </p>
     </div>
   </div>
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
