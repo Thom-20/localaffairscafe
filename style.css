@@ -1001,9 +1001,10 @@ body.menu-open{
     align-items:center !important;
     justify-content:center !important;
     position:static !important;
-    margin-top:18px !important;
-    padding-bottom:26px !important;
-  }
+
+    margin-top:auto !important;
+    padding-bottom:45px !important;
+}
 
   .menu-leaf{
     width:190px !important;
