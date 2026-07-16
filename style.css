@@ -493,6 +493,28 @@ body.menu-open{
   font-size:20px;
 }
 
+.contact-link{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin:8px 0;
+
+    text-decoration:none;
+    color:var(--green);
+
+    transition:.25s ease;
+}
+
+.contact-link img{
+    width:22px;
+    height:22px;
+}
+
+.contact-link:hover{
+    color:var(--gold);
+    transform:translateX(3px);
+}
 
 
 /* TABLET / PHONE */
@@ -864,6 +886,10 @@ body.menu-open{
     margin-top:5px;
     font-size:11px;
     opacity:.85;
+}
+
+.contact-link{
+    justify-content:center;
 }
 
 }
