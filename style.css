@@ -907,7 +907,15 @@ body.menu-open{
 }
 
 .contact-link{
-    gap:14px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+
+    width:fit-content;
+    margin:12px auto;
+
+    text-align:left;
 }
 
 .contact-link img{
