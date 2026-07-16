@@ -891,6 +891,10 @@ body.menu-open{
 .contact-link{
     justify-content:center;
 }
+.contact-link img{
+    width: 18px;
+    height: 18px;
+}
 
 }
 
