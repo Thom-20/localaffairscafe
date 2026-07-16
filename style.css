@@ -944,9 +944,6 @@ body.menu-open{
     font-weight:600;
   }
 
-
-/* ===== FINAL MOBILE FIXES: side menu + header gap ===== */
-@media(max-width:980px){
   /* removes the cream/white band between fixed header and hero */
   .layout{
     padding-top:76px !important;
@@ -1022,17 +1019,19 @@ body.menu-open{
     display:flex !important;
     align-items:center !important;
     justify-content:center !important;
-    position:static !important;
+    position:relative !important;
 
     margin-top:auto !important;
-    padding-bottom:45px !important;
+    padding-bottom:70px !important;
 }
 
-  .menu-leaf{
+.menu-leaf{
     width:190px !important;
     max-width:80% !important;
     height:auto !important;
     display:block !important;
+
     margin:0 auto !important;
-  }
-}}
+    transform:translateY(-25px);
+}
+}
