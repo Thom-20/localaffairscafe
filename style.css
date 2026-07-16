@@ -20,6 +20,14 @@ html{
   min-height:100%;
 }
 
+#home,
+#about,
+#menu,
+#gallery,
+#contact{
+    scroll-margin-top:118px;
+}
+
 body{
   font-family:"Cormorant Garamond",Georgia,serif;
   background:var(--cream);
@@ -520,6 +528,15 @@ body.menu-open{
 /* TABLET / PHONE */
 
 @media(max-width:980px){
+
+#home,
+#about,
+#menu,
+#gallery,
+#contact{
+    scroll-margin-top:76px;
+}
+
   .fullscreen-menu{
     align-items:flex-start;
     overflow-y:auto;
@@ -833,7 +850,7 @@ body.menu-open{
     display:flex;
     align-items:center;
     justify-content:center;
-    transform:translateX(-12px);
+    transform:translateX(-12px); !important;
   }
 
   .brand img{
