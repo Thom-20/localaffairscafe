@@ -796,7 +796,7 @@ body.menu-open{
 .brand{
         position:absolute;
         left:50%;
-        transform:translateX(-35%);
+        transform:translateX(-45%);
     }
 
     .brand img{
