@@ -907,14 +907,21 @@ body.menu-open{
 }
 
 .contact-link{
-    justify-content:center;
-}
-.contact-link img{
-    width: 18px;
-    height: 18px;
+    gap:14px;
 }
 
+.contact-link img{
+    width:20px;
+    height:20px;
+    object-fit:contain;
+    flex-shrink:0;
 }
+
+.contact-link img[alt="Email"]{
+    width:23px;
+    height:23px;
+}
+
 
 /* ===== FINAL MOBILE FIXES: side menu + header gap ===== */
 @media(max-width:980px){
