@@ -86,8 +86,7 @@
     <div>
       <h3>Local Ingredients</h3>
       <p>
-        We partner with local farmers and producers to bring you
-        the freshest seasonal flavors.
+        We work with local growers, regional producers, and trusted suppliers to source fresh, seasonal ingredients whenever possible. Our menu changes throughout the year to highlight the best ingredients available while supporting our local community.
       </p>
     </div>
   </article>
@@ -193,22 +192,64 @@
   <p>Designed by Andrei Toma</p>
 </footer>
 
-<div class="fullscreen-menu" id="fullscreenMenu">
-  <button class="fullscreen-close" id="closeFullscreenMenu">×</button>
+<div class="fullscreen-menu" id="fullscreenMenu" aria-hidden="true">
+  <button class="fullscreen-close" id="closeFullscreenMenu" aria-label="Close menus">×</button>
 
-  <div class="menu-images">
-    <img
-      src="breakfast.jpeg"
-      alt="Local Affairs Breakfast Menu"
-      class="menu-image"
-    >
+  <section class="menu-selector" id="menuSelector">
+    <p class="menu-eyebrow">Local Affairs Café</p>
+    <h2>Our Menus</h2>
+    <p class="menu-selector-intro">Choose a menu to explore</p>
 
-    <img
-      src="drinks.jpeg"
-      alt="Local Affairs Drinks Menu"
-      class="menu-image"
-    >
-  </div>
+    <div class="menu-card-grid">
+      <button class="menu-card" type="button" data-menu-target="breakfastMenu">
+        <span class="menu-card-title">Breakfast</span>
+        <span class="menu-card-time">Served daily 7:30 AM – 11:00 AM</span>
+      </button>
+
+      <button class="menu-card" type="button" data-menu-target="allDayMenu">
+        <span class="menu-card-title">All-Day Menu</span>
+        <span class="menu-card-time">Served daily 12:00 PM – 6:00 PM</span>
+      </button>
+
+      <button class="menu-card" type="button" data-menu-target="coffeeMenu">
+        <span class="menu-card-title">Coffee &amp; Tea</span>
+        <span class="menu-card-time">Hot and cold drinks</span>
+      </button>
+
+      <button class="menu-card" type="button" data-menu-target="bakeryMenu">
+        <span class="menu-card-title">Bakery &amp; Cold Case</span>
+        <span class="menu-card-time">Fresh selections available all day</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="menu-detail" id="breakfastMenu" hidden>
+    <button class="menu-back" type="button">← Back to menus</button>
+    <img src="breakfast.jpeg" alt="Local Affairs Breakfast Menu" class="menu-image">
+  </section>
+
+  <section class="menu-detail" id="coffeeMenu" hidden>
+    <button class="menu-back" type="button">← Back to menus</button>
+    <img src="drinks.jpeg" alt="Local Affairs Coffee and Tea Menu" class="menu-image">
+  </section>
+
+  <section class="menu-detail" id="allDayMenu" hidden>
+    <button class="menu-back" type="button">← Back to menus</button>
+    <div class="menu-coming-soon">
+      <p class="menu-eyebrow">Local Affairs Café</p>
+      <h2>All-Day Menu</h2>
+      <p>Coming soon.</p>
+    </div>
+  </section>
+
+  <section class="menu-detail" id="bakeryMenu" hidden>
+    <button class="menu-back" type="button">← Back to menus</button>
+    <div class="menu-coming-soon">
+      <p class="menu-eyebrow">Local Affairs Café</p>
+      <h2>Bakery &amp; Cold Case</h2>
+      <p>Coming soon.</p>
+    </div>
+  </section>
 </div>
 
 <script src="script.js"></script>

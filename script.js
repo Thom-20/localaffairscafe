@@ -27,12 +27,25 @@ function closeSideMenu() {
   }
 }
 
+function showMenuSelector() {
+  const menuSelector = document.getElementById("menuSelector");
+  document.querySelectorAll(".menu-detail").forEach(detail => {
+    detail.hidden = true;
+  });
+
+  if (menuSelector) {
+    menuSelector.hidden = false;
+  }
+}
+
 function openRestaurantMenu() {
   if (!fullscreenMenu) return;
 
   closeSideMenu();
+  showMenuSelector();
 
   fullscreenMenu.classList.add("active");
+  fullscreenMenu.setAttribute("aria-hidden", "false");
   document.body.classList.add("menu-open");
 }
 
@@ -40,6 +53,7 @@ function closeRestaurantMenu() {
   if (!fullscreenMenu) return;
 
   fullscreenMenu.classList.remove("active");
+  fullscreenMenu.setAttribute("aria-hidden", "true");
   document.body.classList.remove("menu-open");
 }
 
@@ -75,6 +89,30 @@ if (openMenuFromSidebar) {
 if (closeFullscreenMenu) {
   closeFullscreenMenu.addEventListener("click", closeRestaurantMenu);
 }
+
+/* Selectează categoria de meniu fără a închide fereastra fullscreen */
+document.querySelectorAll("[data-menu-target]").forEach(button => {
+  button.addEventListener("click", () => {
+    const target = document.getElementById(button.dataset.menuTarget);
+    const menuSelector = document.getElementById("menuSelector");
+
+    if (!target || !menuSelector) return;
+
+    menuSelector.hidden = true;
+    document.querySelectorAll(".menu-detail").forEach(detail => {
+      detail.hidden = detail !== target;
+    });
+
+    fullscreenMenu.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
+
+document.querySelectorAll(".menu-back").forEach(button => {
+  button.addEventListener("click", () => {
+    showMenuSelector();
+    fullscreenMenu.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
 
 /* Închide meniul fullscreen când se apasă în afara conținutului */
 if (fullscreenMenu) {
