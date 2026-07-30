@@ -873,7 +873,7 @@ body.menu-open {
 
   /* Fullscreen menu */
   .fullscreen-menu{
-  padding:65px 10px 24px;
+  padding:60px 5px 20px;
 }
 
 .fullscreen-close{
@@ -890,12 +890,12 @@ body.menu-open {
         justify-items:center;
         gap:20px;
 
-        padding:0 15px;
+        padding:0 6px;
     }
 
     .menu-image{
-        width:96%;
-        max-width:500px;
+        width:99%;
+        max-width:560px;
         aspect-ratio:auto;
         height:auto;
     }
