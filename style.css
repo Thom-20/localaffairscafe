@@ -132,7 +132,7 @@ body.menu-open {
   z-index: 60;
   width: 300px;
   height: calc(100vh - 150px);
-  padding-top: 92px;
+  padding-top: 35px;
   background: linear-gradient(135deg, #102018, #283d30);
   box-shadow: 10px 0 28px rgba(0, 0, 0, 0.22);
   transition: left 0.35s ease;
@@ -151,7 +151,7 @@ body.menu-open {
   width: 180px;
   max-width: none;
   height: auto;
-  margin: 20px auto 35px;
+  margin: 0px auto 25px;
 }
 
 .side-nav a {
