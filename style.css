@@ -322,7 +322,7 @@ body.menu-open {
 }
 
 .hero h2 {
-  font-size: clamp(48px, 4vw, 68px);
+  font-size: clamp(38px, 3.2vw, 54px);
   font-weight: 500;
   line-height: 1.12;
   letter-spacing: 5px;
@@ -973,7 +973,7 @@ body.menu-open {
   }
 
   .hero h2 {
-    font-size: 31px;
+    font-size: 26px;
     line-height: 1.24;
     letter-spacing: 3px;
   }
