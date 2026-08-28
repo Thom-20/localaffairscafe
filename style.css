@@ -305,7 +305,7 @@ body.menu-open {
   align-items: center;
   justify-content: center;
   padding: 40px 7%;
-  background-color: #15251b;
+  background-color: #F7EAD5;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.34)),
     url("main.jpeg");
