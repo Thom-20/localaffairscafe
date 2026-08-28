@@ -61,6 +61,7 @@ body.menu-open {
 
     background:#F7EAD5;
     box-shadow:0 8px 25px rgba(0,0,0,.24);
+    overflow:hidden;
 }
 
 .menu-toggle{
@@ -117,6 +118,7 @@ body.menu-open {
     gap:22px;
 
     text-decoration:none;
+    overflow:hidden;
 }
 
 
@@ -135,14 +137,12 @@ body.menu-open {
 /* LOCAL AFFAIRS */
 
 .brand-local{
-    color:var(--cream);
+    color:#174d32;
 
     font-family:Georgia, "Times New Roman", serif;
     font-size:47px;
     font-weight:700;
     font-style:italic;
-    color:#174d32;
-
 
     letter-spacing:-1px;
 
@@ -200,8 +200,10 @@ body.menu-open {
 .brand-house{
     display:block;
 
-    width:205px;
-    height:auto;
+    width:auto;
+    height:115px;
+    max-height:80%;
+    object-fit:contain;
 
     flex-shrink:0;
 }
@@ -776,7 +778,7 @@ body.menu-open {
 
     gap:7px;
 
-    transform:translateX(-8px);
+    transform:none;
 }
 
 
@@ -808,7 +810,7 @@ body.menu-open {
 
 .brand-line{
     height:1px;
-    color:#174d32;
+    background:#174d32;
 
 }
 
@@ -824,8 +826,10 @@ body.menu-open {
 
 
 .brand-house{
-    width:88px;
-    height:auto;
+    width:auto;
+    height:58px;
+    max-height:76%;
+    object-fit:contain;
 }
 
 
