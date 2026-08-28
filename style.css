@@ -59,7 +59,7 @@ body.menu-open {
     grid-template-columns:120px 1fr;
     align-items:center;
 
-    background:linear-gradient(90deg,var(--green),var(--green2));
+    background:#F7EAD5;
     box-shadow:0 8px 25px rgba(0,0,0,.24);
 }
 
@@ -81,10 +81,11 @@ body.menu-open {
 }
 
 .menu-toggle span{
+    display:block;
     width:52px;
     height:4px;
     border-radius:3px;
-    background:var(--cream);
+    background:#174d32;
     transition:.25s ease;
 }
 
@@ -100,17 +101,112 @@ body.menu-open {
     transform:translateY(-17px) rotate(-45deg);
 }
 
+
+/* =====================================================
+   HEADER BRAND
+===================================================== */
+
 .brand{
     width:100%;
+    height:100%;
+
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
+
+    gap:22px;
+
+    text-decoration:none;
 }
 
-.brand img{
-    width:560px;
-    height:auto;
+
+/* TEXT LOGO */
+
+.brand-wordmark{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    line-height:1.1;
 }
+
+
+/* LOCAL AFFAIRS */
+
+.brand-local{
+    color:var(--cream);
+
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:47px;
+    font-weight:700;
+    font-style:italic;
+    color:#174d32;
+
+
+    letter-spacing:-1px;
+
+    text-shadow:
+      1px 1px 0 rgba(0,0,0,.25);
+}
+
+
+/* CAFE + LINES */
+
+.brand-affairs-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+}
+
+
+.brand-affairs{
+    color:#174d32;
+
+
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:52px;
+    font-weight:700;
+    font-style:italic;
+
+    letter-spacing:1px;
+}
+
+
+/* GOLD / ORANGE LINES */
+
+.brand-line{
+    display:block;
+
+    height:2px;
+    background:#174d32;
+
+}
+
+
+.brand-line-left{
+    width:95px;
+}
+
+
+.brand-line-right{
+    width:145px;
+}
+
+
+/* HOUSE */
+
+.brand-house{
+    display:block;
+
+    width:205px;
+    height:auto;
+
+    flex-shrink:0;
+}
+
+
 
 /* =====================================================
    MAIN LAYOUT
@@ -649,18 +745,18 @@ body.menu-open {
     justify-content: initial;
   }
 
-  .menu-toggle {
-    position: relative;
-    left: auto;
-    justify-self: center;
-    width: 32px;
-    height: 24px;
-  }
+    .menu-toggle{
+        width:32px;
+        height:24px;
+        background:transparent;
+    }
 
-  .menu-toggle span {
-    width: 32px;
-    height: 2px;
-  }
+    .menu-toggle span{
+        display:block;
+        width:32px;
+        height:2px;
+        background:#174d32;
+    }
 
   .menu-toggle.active span:nth-child(1) {
     transform: translateY(11px) rotate(45deg);
@@ -670,20 +766,70 @@ body.menu-open {
     transform: translateY(-11px) rotate(-45deg);
   }
 
-  .brand {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(-12px);
-  }
+  .brand{
+    width:100%;
+    height:100%;
 
-  .brand img {
-    display: block;
-    width: 300px;
-    max-width: 90%;
-    height: auto;
-  }
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:7px;
+
+    transform:translateX(-8px);
+}
+
+
+.brand-wordmark{
+    line-height:1.1;
+}
+
+
+.brand-local{
+    font-size:18px;
+    letter-spacing:-.3px;
+    color:#174d32;
+
+}
+
+
+.brand-affairs{
+    font-size:20px;
+    letter-spacing:.3px;
+    color:#174d32;
+
+}
+
+
+.brand-affairs-row{
+    gap:3px;
+}
+
+
+.brand-line{
+    height:1px;
+    color:#174d32;
+
+}
+
+
+.brand-line-left{
+    width:38px;
+}
+
+
+.brand-line-right{
+    width:55px;
+}
+
+
+.brand-house{
+    width:88px;
+    height:auto;
+}
+
+
+
 
   /* Main layout */
   .layout {
