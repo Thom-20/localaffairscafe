@@ -852,7 +852,7 @@ body.menu-open {
 .floating-reservation{
   position:fixed;
   right:42px;
-  top:85%;
+  top:90%;
   z-index:1450;
   display:flex;
   align-items:center;
@@ -866,9 +866,9 @@ body.menu-open {
   background:#174d32;
   color:#F7EAD5;
   text-decoration:none;
-  box-shadow:0 7px 24px rgba(0,0,0,.24);
+  box-shadow:none;
   transform:translateY(-50%);
-  transition:background-color .25s ease, box-shadow .25s ease;
+  transition:background-color .25s ease;
 }
 .floating-reservation-photo{
   width:68px;
@@ -911,7 +911,6 @@ body.menu-open {
 .floating-reservation:hover,
 .floating-reservation:focus-visible{
   background:#263b2e;
-  box-shadow:0 9px 28px rgba(0,0,0,.3);
   outline:none;
 }
 .floating-reservation:hover .floating-reservation-label,
@@ -1419,25 +1418,31 @@ body.menu-open {
 .floating-reservation{
     right:16px;
     top:76%;
-    min-height:58px;
-    padding:4px 4px 4px 0;
-    border-radius:31px;
+    min-height:50px;
+    padding:3px 3px 3px 0;
+    border-radius:27px;
+    box-shadow:none;
   }
-  .floating-reservation-photo{width:48px;height:48px;flex-basis:48px;}
+  .floating-reservation-photo{width:42px;height:42px;flex-basis:42px;}
   .floating-reservation-label{
-    width:112px;
-    padding:0 10px 0 14px;
-    font-size:10.5px;
-    letter-spacing:1.35px;
+    width:98px;
+    padding:0 8px 0 11px;
+    font-size:9px;
+    letter-spacing:1.1px;
   }
   @keyframes reservationPulseText{
-    0%,38%{width:112px;padding-left:14px;padding-right:10px;opacity:1;}
+    0%,38%{width:98px;padding-left:11px;padding-right:8px;opacity:1;}
     46%,84%{width:0;padding-left:0;padding-right:0;opacity:0;}
-    92%,100%{width:112px;padding-left:14px;padding-right:10px;opacity:1;}
+    92%,100%{width:98px;padding-left:11px;padding-right:8px;opacity:1;}
   }
+  .floating-reservation:hover,
+  .floating-reservation:focus-visible{
+    box-shadow:none;
+  }
+
   .floating-reservation:hover .floating-reservation-label,
   .floating-reservation:focus-visible .floating-reservation-label{
-    width:112px;padding-left:14px;padding-right:10px;
+    width:98px;padding-left:11px;padding-right:8px;
   }
 }
 
