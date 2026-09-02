@@ -889,13 +889,16 @@ body.menu-open {
   object-position:center 72%;
 }
 .floating-reservation-label{
+  position:relative;
+  z-index:1;
   display:flex;
   align-items:center;
   justify-content:center;
-  align-self:stretch;
   box-sizing:content-box;
   width:158px;
+  height:68px;
   padding:0 15px 0 22px;
+  margin-right:0;
   overflow:hidden;
   white-space:nowrap;
   font-family:"Lato",sans-serif;
@@ -906,16 +909,25 @@ body.menu-open {
   text-transform:uppercase;
   text-align:center;
   background:#174d32;
-  border-radius:44px 0 0 44px;
-  margin-right:-10px;
-  padding-right:25px;
+  border-radius:34px 0 0 34px;
   opacity:1;
   animation:reservationPulseText 8s ease-in-out infinite;
 }
+
+.floating-reservation-label::after{
+  content:"";
+  position:absolute;
+  top:0;
+  right:-34px;
+  width:34px;
+  height:68px;
+  background:#174d32;
+  pointer-events:none;
+}
 @keyframes reservationPulseText{
-  0%,38%{width:158px;padding-left:22px;padding-right:25px;opacity:1;}
+  0%,38%{width:158px;padding-left:22px;padding-right:15px;opacity:1;}
   46%,84%{width:0;padding-left:0;padding-right:0;opacity:0;}
-  92%,100%{width:158px;padding-left:22px;padding-right:25px;opacity:1;}
+  92%,100%{width:158px;padding-left:22px;padding-right:15px;opacity:1;}
 }
 .floating-reservation:hover,
 .floating-reservation:focus-visible{
@@ -928,7 +940,7 @@ body.menu-open {
   animation-play-state:paused;
   width:158px;
   padding-left:22px;
-  padding-right:25px;
+  padding-right:15px;
   opacity:1;
 }
 
@@ -1436,17 +1448,23 @@ body.menu-open {
   .floating-reservation-photo{width:42px;height:42px;flex-basis:42px;}
   .floating-reservation-label{
     width:98px;
+    height:42px;
     padding:0 8px 0 11px;
+    margin-right:0;
     font-size:9px;
     letter-spacing:1.1px;
-    border-radius:27px 0 0 27px;
-    margin-right:-7px;
-    padding-right:15px;
+    border-radius:21px 0 0 21px;
+  }
+
+  .floating-reservation-label::after{
+    right:-21px;
+    width:21px;
+    height:42px;
   }
   @keyframes reservationPulseText{
-    0%,38%{width:98px;padding-left:11px;padding-right:15px;opacity:1;}
+    0%,38%{width:98px;padding-left:11px;padding-right:8px;opacity:1;}
     46%,84%{width:0;padding-left:0;padding-right:0;opacity:0;}
-    92%,100%{width:98px;padding-left:11px;padding-right:15px;opacity:1;}
+    92%,100%{width:98px;padding-left:11px;padding-right:8px;opacity:1;}
   }
   .floating-reservation:hover,
   .floating-reservation:focus-visible{
@@ -1455,7 +1473,7 @@ body.menu-open {
 
   .floating-reservation:hover .floating-reservation-label,
   .floating-reservation:focus-visible .floating-reservation-label{
-    width:98px;padding-left:11px;padding-right:15px;
+    width:98px;padding-left:11px;padding-right:8px;
   }
 }
 
