@@ -860,10 +860,10 @@ body.menu-open {
   gap:0;
   min-height:82px;
   padding:6px 6px 6px 0;
-  overflow:hidden;
-  border:1px solid rgba(201,155,56,.72);
+  overflow:visible;
+  border:none;
   border-radius:44px;
-  background:#174d32;
+  background:transparent;
   color:#F7EAD5;
   text-decoration:none;
   box-shadow:none;
@@ -887,7 +887,10 @@ body.menu-open {
   object-position:center 72%;
 }
 .floating-reservation-label{
-  display:block;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  align-self:stretch;
   box-sizing:content-box;
   width:158px;
   padding:0 15px 0 22px;
@@ -900,6 +903,8 @@ body.menu-open {
   letter-spacing:2px;
   text-transform:uppercase;
   text-align:center;
+  background:#174d32;
+  border-radius:44px 0 0 44px;
   opacity:1;
   animation:reservationPulseText 8s ease-in-out infinite;
 }
@@ -910,11 +915,12 @@ body.menu-open {
 }
 .floating-reservation:hover,
 .floating-reservation:focus-visible{
-  background:#263b2e;
+  background:transparent;
   outline:none;
 }
 .floating-reservation:hover .floating-reservation-label,
 .floating-reservation:focus-visible .floating-reservation-label{
+  background:#263b2e;
   animation-play-state:paused;
   width:158px;
   padding-left:22px;
@@ -1417,9 +1423,9 @@ body.menu-open {
   =================================================== */
 .floating-reservation{
     right:16px;
-    top:90%;
-    min-height:50px;
-    padding:3px 3px 3px 0;
+    top:95%;
+    min-height:42px;
+    padding:0;
     border-radius:27px;
     box-shadow:none;
   }
@@ -1429,6 +1435,7 @@ body.menu-open {
     padding:0 8px 0 11px;
     font-size:9px;
     letter-spacing:1.1px;
+    border-radius:27px 0 0 27px;
   }
   @keyframes reservationPulseText{
     0%,38%{width:98px;padding-left:11px;padding-right:8px;opacity:1;}
