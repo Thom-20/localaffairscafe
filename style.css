@@ -1484,6 +1484,18 @@ body.menu-open {
 }
 
 
+
+/* =====================================================
+   RESERVATION — HIDE TEXT WHILE MENU / GALLERY IS OPEN
+===================================================== */
+body.menu-open .floating-reservation-label{
+  animation: none !important;
+  width: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  opacity: 0 !important;
+}
+
 /* =====================================================
    ACCESSIBILITY
 ===================================================== */
